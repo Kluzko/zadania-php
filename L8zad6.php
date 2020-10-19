@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zadadnie nr 4</title>
+  <title>Zadadnie nr </title>
 </head>
 
 <body>
@@ -18,22 +18,14 @@
   $tablica[6] = "Basia";
   echo "<ol type='A'>";
   for ($i = 0; $i <= 6; $i++) {
+    $wyrazenie = '/\b.*a\b/';
 
-
-    echo "<li>" . "<p>" . $tablica[$i] . "</p>" . "</li>";
+    if (!preg_match($wyrazenie, $tablica[$i])) {
+      echo "<li>" . "<p>" . $tablica[$i] . "</p>" . "</li>";
+    }
   }
   echo "</ol>";
-  echo "<br>";
-  $tablica[0] = "Ela";
-  $tablica[1] = "Basia";
 
-  echo "<ol>";
-  for ($i = 0; $i <= 6; $i++) {
-
-
-    echo "<li>" . "<p>" . $tablica[$i] . "</p>" . "</li>";
-  }
-  echo "</ol>";
 
 
 
