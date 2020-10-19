@@ -4,36 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zadanie 10</title>
+  <title>Document</title>
 </head>
 
 <body>
   <?php
+
+
+  $noweLiczby = array();
   $liczby = array();
 
   for ($i = 20; $i >= 5; $i--) {
     $liczby[] = $i;
-    echo "<br>";
-    echo $i;
   }
-  echo "<br>";
-  echo "<br>";
-  echo "<br>";
-  $noweLiczby = array();
   foreach ($liczby as $liczba) {
-    // Sprawdzamy czy liczby sa podzielne przez 2 
     if ($liczba % 2 == 0) {
       $liczbyPodzilne = $liczba + 100;
       $noweLiczby[] = $liczbyPodzilne;
-      // Sprawdzamy czy liczby nie sa podzielne przez 2 
     } else if ($liczba % 2 != 0) {
       $noweLiczby[] = $liczba;
     }
   }
-  // Wpysujemy liczby z tabeli "noweLiczby"
+
+  $wartoscDo700 = 0;
+  $suma = 0;
+
   foreach ($noweLiczby as $liczba) {
-    echo $liczba . "<br>";
+    if ($suma <= 700) {
+      $suma += $liczba;
+      $wartoscDo700++;
+    }
   }
+  echo 'Nalezy zsumowac : ' . $wartoscDo700 . "<br>";
+
+
 
   ?>
 </body>
