@@ -17,7 +17,7 @@
   $tablica[5] = "Kasia";
   $tablica[6] = "Basia";
   for ($i = 0; $i < 7; $i++) {
-    if ($i % 2) {
+    if ($i % 2 == 0) {
       echo $tablica[$i] . "<br>";
     }
   }
