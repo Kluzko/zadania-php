@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zadadnie nr 7 </title>
+  <title>Zadadnie nr 8 </title>
 </head>
 
 <body>
